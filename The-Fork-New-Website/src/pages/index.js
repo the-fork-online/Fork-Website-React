@@ -1,14 +1,17 @@
 // Components
+// Core Components
 import React from "react"
+
+// Style Components
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css'
+
+// Page Components
 import Footer from '../components/Footer/Footer'
 
 // Style
 import './style.css'
 
 export default () => <div>
-
     <Footer />
 
 </div>

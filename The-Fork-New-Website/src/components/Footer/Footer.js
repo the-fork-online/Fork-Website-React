@@ -1,73 +1,118 @@
 import React from 'react'
 import './footer.css'
+import { FaHome, FaEnvelope, FaPhone, FaGlobe, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
+
+const black = {
+    color: 'black'
+};
+
+const marign = {
+    width: "60px"
+};
 
 function Footer() {
     return (
-        // Footer start
-        <footer className="footer">
-            <div className="container bottom_border">
-                <div className="row">
-                    <div className=" col-sm-4 col-md col-sm-4  col-12 col">
-                        <h5 className="headin5_amrc col_white_amrc pt2">About us</h5>
-                        <p className="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </div>
-                    
-                    <div className=" col-sm-4 col-md  col-6 col">
-                        <h5 className="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                        <ul className="footer_ul_amrc">
-                        <li><a href="test.com">Image Rectoucing</a></li>
-                        <li><a href="test.com">Clipping Path</a></li>
-                        <li><a href="test.com">Hollow Man Montage</a></li>
-                        <li><a href="test.com">Ebay & Amazon</a></li>
-                        <li><a href="test.com">Hair Masking/Clipping</a></li>
-                        <li><a href="test.com">Image Cropping</a></li>
-                        </ul>
-                    </div>
+        <footer className="page-footer font-small unique-color-dark">
 
-                    <div className=" col-sm-4 col-md  col-6 col">
-                        <h5 className="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                        <ul className="footer_ul_amrc">
-                        <li><a href="test.com">Remove Background</a></li>
-                        <li><a href="test.com">Shadows & Mirror Reflection</a></li>
-                        <li><a href="test.com">Logo Design</a></li>
-                        <li><a href="test.com">Vectorization</a></li>
-                        <li><a href="test.com">Hair Masking/Clipping</a></li>
-                        <li><a href="test.com">Image Cropping</a></li>
-                        </ul>
-                    </div>
+            <div className="footer-background">
+                <div className="container">
 
 
-                    <div className=" col-sm-4 col-md  col-12 col">
-                        <h5 className="headin5_amrc col_white_amrc pt2">Follow us</h5>
-                        <ul className="footer_ul2_amrc">
-                        <li><a href="test.com"><i className="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="test.com">https://www.lipsum.com/</a></p></li>
-                        <li><a href="test.com"><i className="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="test.com">https://www.lipsum.com/</a></p></li>
-                        <li><a href="test.com"><i className="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="test.com">https://www.lipsum.com/</a></p></li>
-                        </ul>
+                    <div className="row py-4 d-flex align-items-center">
+
+                        <div id="footer" className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6 className="mb-0">Get connected with us on social networks!</h6>
+                        </div>
+
+
+
+                        <div className="col-md-6 col-lg-7 text-center text-md-right">
+
+
+                            <a href="https://www.facebook.com/thefork.online" className="social-btn">
+                                <i className="fab white-text"><FaFacebookF /></i>
+                            </a>
+
+                            <a href="https://twitter.com/foodchained" className="social-btn">
+                                <i className="fab white-text"><FaTwitter /></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/company/thefork/" className="social-btn">
+                                <i className="fab white-text"><FaLinkedinIn /></i>
+                            </a>
+                            <a href="https://www.instagram.com/_thefork_/" className="social-btn">
+                                <i className="fab white-text"><FaInstagram /></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCsyBw9YNtg9KVm_XUgjW6jA" className="social-btn">
+                                <i className="fab white-text"><FaYoutube /></i>
+                            </a>
+                        </div>
+
                     </div>
+
                 </div>
             </div>
 
-            <div className="container">
-                <ul className="foote_bottom_ul_amrc">
-                <li><a href="test.com">Home</a></li>
-                <li><a href="test.com">About</a></li>
-                <li><a href="test.com">Services</a></li>
-                <li><a href="test.com">Pricing</a></li>
-                <li><a href="test.com">Blog</a></li>
-                <li><a href="test.com">Contact</a></li>
-                </ul>
-                <p className="text-center">Copyright @2017 | Designed With by <a href="test.com">Your Company Name</a></p>
-                <ul className="social_footer_ul">
-                <li><a href="test.com"><i className="fab fa-facebook-f"></i></a></li>
-                <li><a href="test.com"><i className="fab fa-twitter"></i></a></li>
-                <li><a href="test.com"><i className="fab fa-linkedin"></i></a></li>
-                <li><a href="test.com"><i className="fab fa-instagram"></i></a></li>
-                </ul>
+            <div className="container text-center text-md-left mt-5">
+
+                <div className="row mt-3">
+
+                    <div className="col-md-3 col-lg-4 col-xl-5 mx-auto mb-4">
+
+                        <h6 className="text-uppercase font-weight-bold">The Fork</h6>
+                        <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto line-width" style={marign} />
+                        <p>
+                            the company that is on the frontier of blockchain technology. The Fork offers blockchain courses in Amsterdam, blockchain in-house trainings and assists companies in the agrifood industry implementing blockchain technology.
+                            </p>
+
+                    </div>
+
+                    <div id="footer" className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 className="text-uppercase font-weight-bold" style={black}>Sitemap</h6>
+                        <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={marign} />
+                        <p>
+                            <a href="#">fakelink</a>
+                        </p>
+                        <p>
+                            <a href="#">fakelink</a>
+                        </p>
+                        <p>
+                            <a href="#">fakelink</a>
+                        </p>
+                        <p>
+                            <a href="#">fakelink</a>
+                        </p>
+
+                    </div>
+
+                    <div id="footer" className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 className="text-uppercase font-weight-bold" style={black}>Contact</h6>
+                        <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={marign} />
+                        <p>
+                            <i className="fas mr-3"><FaHome /></i> Science Park 608</p>
+                        <p>
+                            <i className="fa mr-3"><FaMapMarkerAlt /></i> 1098 XH Amsterdam</p>
+                        <p><a href="mailto:hi@thefork.online">
+                            <i className="fas mr-3"><FaEnvelope /></i> hi@thefork.online</a></p>
+                        <p><a href="tel:+31613502191">
+                            <i className="fas mr-3"><FaPhone /></i> +31 6 13502191</a></p>
+                        <p><a href="">
+                            <i className="fa mr-3"><FaGlobe /></i> thefork.online</a></p>
+                    </div>
+
+                </div>
+                <div className="container">
+                <hr />
+                </div>
+            </div>
+            
+            <div id="footer" className="footer-copyright text-center py-3"><strong>© 2019 Copyright:
+                        <a href=""> thefork.online</a></strong>
             </div>
 
         </footer>
-        // footer end
     )
 }
 
