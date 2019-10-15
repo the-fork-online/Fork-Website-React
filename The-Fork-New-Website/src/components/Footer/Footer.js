@@ -72,16 +72,16 @@ function Footer() {
                         <h6 className="text-uppercase font-weight-bold" style={black}>Sitemap</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={marign} />
                         <p>
-                            <a href="#">fakelink</a>
+                            <a href="test.com">fakelink</a>
                         </p>
                         <p>
-                            <a href="#">fakelink</a>
+                            <a href="test.com">fakelink</a>
                         </p>
                         <p>
-                            <a href="#">fakelink</a>
+                            <a href="test.com">fakelink</a>
                         </p>
                         <p>
-                            <a href="#">fakelink</a>
+                            <a href="test.com">fakelink</a>
                         </p>
 
                     </div>
@@ -98,18 +98,19 @@ function Footer() {
                             <i className="fas mr-3"><FaEnvelope /></i> hi@thefork.online</a></p>
                         <p><a href="tel:+31613502191">
                             <i className="fas mr-3"><FaPhone /></i> +31 6 13502191</a></p>
-                        <p><a href="">
+                        <p><a href="thefork.online">
                             <i className="fa mr-3"><FaGlobe /></i> thefork.online</a></p>
                     </div>
 
                 </div>
-                <div className="container">
-                <hr />
-                </div>
             </div>
-            
-            <div id="footer" className="footer-copyright text-center py-3"><strong>© 2019 Copyright:
-                        <a href=""> thefork.online</a></strong>
+
+            <div className="container-fluid">
+                <hr />
+            </div>
+
+            <div id="footer" className="footer-copyright text-center py-3">
+                <strong>© 2019 Copyright:<a href="thefork.online"> thefork.online</a></strong>
             </div>
 
         </footer>
