@@ -13,7 +13,7 @@
   # Default build command.
   command = "echo 'gatsby build'"
 
-# Allow CORS
+# Allows CORS
 [[headers]]
   for = "/"
   [headers.values]
