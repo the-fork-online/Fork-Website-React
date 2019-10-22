@@ -14,6 +14,7 @@ import About from '../components/About/About'
 import './style.css'
 
 export default () => <div>
+    <Navbar />
     <About />
     <Footer />
 </div>
