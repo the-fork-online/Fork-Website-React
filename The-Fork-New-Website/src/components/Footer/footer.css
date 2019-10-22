@@ -1,5 +1,5 @@
 .footer-background {
-	background-color: #026666;
+	background-color: var(--primary) !important;
 }
 
 #footer a {
