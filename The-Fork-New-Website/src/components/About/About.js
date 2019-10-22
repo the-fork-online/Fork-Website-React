@@ -1,6 +1,12 @@
 import React from 'react'
 import "./About.css"
 import sr from '../Scrollreveal/ScrollReveal'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 export class About extends React.Component {
 
@@ -25,7 +31,7 @@ export class About extends React.Component {
             easing: 'ease',
         }
         sr.reveal(this.refs.box2, configText)
-        
+
         // Quotes
         const configWord = {
             origin: 'bottom',
@@ -72,7 +78,16 @@ export class About extends React.Component {
                     </div>
 
                     <div class="col-md-4">
-                        <button id="team-btn" ref="box4" type="button" class="font-weight-bold shadow-lg btn my-3"><h5>The Team</h5></button>
+                        <Router>
+                            <button id="team-btn" ref="box4" type="button" class="font-weight-bold shadow-lg btn my-3"><Link to="/about">About</Link></button>
+                            <Switch>
+                                <Route>
+                                    <Route path="/team">
+                                        <Users />
+                                    </Route>
+                                </Route>
+                            </Switch>
+                        </Router>
                     </div>
 
                     <div class="col-md-4">
