@@ -8,6 +8,8 @@ import {
     Link
 } from "react-router-dom";
 
+import Team from "../Team/Team"
+
 export class About extends React.Component {
 
     componentDidMount = () => {
@@ -79,14 +81,12 @@ export class About extends React.Component {
 
                     <div class="col-md-4">
                         <Router>
-                            <button id="team-btn" ref="box4" type="button" class="font-weight-bold shadow-lg btn my-3"><Link to="/about">About</Link></button>
-                            <Switch>
-                                <Route>
-                                    <Route path="/team">
-                                        <Users />
-                                    </Route>
-                                </Route>
-                            </Switch>
+                            <div>
+                                <button id="team-btn" ref="box4" type="button" class="font-weight-bold shadow-lg btn my-3"><Link to="/Team">Team</Link></button>
+                                <Switch>
+                                    <Route exact path='/Team' component={Team} />
+                                </Switch>
+                            </div>
                         </Router>
                     </div>
 
@@ -100,4 +100,6 @@ export class About extends React.Component {
         )
     }
 }
+
+
 export default About
