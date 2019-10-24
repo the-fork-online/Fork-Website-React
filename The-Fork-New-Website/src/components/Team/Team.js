@@ -16,7 +16,7 @@ export class Team extends React.Component {
                                         <div className="frontside">
                                             <div className="card" id="test">
                                                 <div className="card-body text-center">
-                                                    <p><img className=" img-fluid" src={WorkersDetail.image} alt="card image" /></p>
+                                                    <p><img className=" img-fluid" src={WorkersDetail.image} alt="card img" /></p>
                                                     <h4 className="card-title">{WorkersDetail.name}</h4>
                                                     <p className="card-text">{WorkersDetail.title}</p>
                                                     <a href="#!" className="btn btn-dark btn-sm"><i className="fa"><FaPlus /></i></a>

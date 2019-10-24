@@ -1,14 +1,7 @@
 import React from 'react'
 import "./About.css"
 import sr from '../Scrollreveal/ScrollReveal'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-
-import Team from "../Team/Team"
+import { Link } from "gatsby"
 
 export class About extends React.Component {
 
@@ -80,14 +73,7 @@ export class About extends React.Component {
                     </div>
 
                     <div class="col-md-4">
-                        <Router>
-                            <div>
-                                <button id="team-btn" ref="box4" type="button" class="font-weight-bold shadow-lg btn my-3"><Link to="/Team">Team</Link></button>
-                                <Switch>
-                                    <Route exact path='/Team' component={Team} />
-                                </Switch>
-                            </div>
-                        </Router>
+                        <Link to="/Team"><button id="team-btn" ref="box4" type="button" class="font-weight-bold shadow-lg text-light btn my-3">The team</button></Link>
                     </div>
 
                     <div class="col-md-4">
