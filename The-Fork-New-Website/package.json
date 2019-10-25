@@ -15,7 +15,10 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.16.5",
+    "gatsby-plugin-netlify-cms": "^4.1.25",
+    "gatsby-source-filesystem": "^2.1.33",
     "jquery": "^3.4.1",
+    "netlify-cms-app": "^2.9.7",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",
