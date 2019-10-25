@@ -1,19 +1,25 @@
-// Components
-// Core Components
+// Modules
 import React from "react"
+import { graphql } from "gatsby"
 
-// Style Components
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Styles
+import './style.css'
 
-// Page Components
+// Pages
+import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import About from '../components/About/About'
 
-// Style
-import './style.css'
+// Index page
+const IndexPage = () => {
 
-export default () => <div>
-    
-    <About />
-    <Footer />
-</div>
+  return(
+    <div>
+        <Navbar />
+        <About />
+        <Footer />
+    </div>
+  )
+}
+
+export default IndexPage
