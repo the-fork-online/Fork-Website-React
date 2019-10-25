@@ -2,7 +2,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-// Styles
+// Style
 import './style.css'
 
 // Pages
