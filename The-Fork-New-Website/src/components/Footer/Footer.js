@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './footer.css'
 import { FaHome, FaEnvelope, FaPhone, FaGlobe, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
 
@@ -10,10 +11,11 @@ const marign = {
     width: "60px"
 };
 
-export class Footer extends React.Component {
-    render() {
-        return (
-            <footer className="page-footer font-small unique-color-dark" >
+
+const Footer = () => (
+    <div>
+        <footer className="page-footer font-small unique-color-dark">
+
 
                 <div className="footer-background">
                     <div className="container">
@@ -114,9 +116,10 @@ export class Footer extends React.Component {
                     <strong>© 2019 Copyright:<a href="thefork.online"> thefork.online</a></strong>
                 </div>
 
-            </footer>
-        )
-    }
-}
+
+        </footer>
+    </div>
+)
+
 
 export default Footer
