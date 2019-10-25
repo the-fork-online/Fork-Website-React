@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './footer.css'
 import { FaHome, FaEnvelope, FaPhone, FaGlobe, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
 
@@ -10,8 +11,8 @@ const marign = {
     width: "60px"
 };
 
-function Footer() {
-    return (
+const Footer = () => (
+    <div>
         <footer className="page-footer font-small unique-color-dark">
 
             <div className="footer-background">
@@ -114,7 +115,7 @@ function Footer() {
             </div>
 
         </footer>
-    )
-}
+    </div>
+)
 
 export default Footer
