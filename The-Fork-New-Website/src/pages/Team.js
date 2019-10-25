@@ -6,6 +6,7 @@ import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Page Components
+import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import Team from '../components/Team/Team'
 
@@ -14,6 +15,8 @@ import './style.css'
 
 export default () => <div>
     
+    <Navbar />
     <Team />
     <Footer />
+    
 </div>
