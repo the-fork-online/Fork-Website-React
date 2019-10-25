@@ -1,19 +1,50 @@
-// Components
-// Core Components
-import React from 'react'
+// Modules
+import React from "react"
+import { graphql } from "gatsby"
 
-// Style Components
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Styles
+import './style.css'
 
-// Page Components
+// Pages
+import PostLink from "../components/Postlink/post-link"
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 
-// Style
-import './style.css'
+// Index page
+const IndexPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const Posts = edges
+    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
-export default () => <div>
-    <Navbar />
-    <Footer />
+  return(
+    <div>
+        <Navbar />
+        {Posts}
+        <Footer />
+    </div>
+  )
+}
 
-</div>
+export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "DD-MMMM-YYYY")
+            path
+            title
+          }
+        }
+      }
+    }
+  }
+`
