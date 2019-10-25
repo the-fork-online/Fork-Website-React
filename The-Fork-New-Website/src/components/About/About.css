@@ -1,0 +1,12 @@
+#team-btn {
+    background-color: #3399CC;
+}
+
+#team-btn:hover {
+    background-color: rgb(40, 120, 160);
+}
+
+#team-btn h5 {
+    color: #fff;;
+    margin-bottom: 0;
+}
