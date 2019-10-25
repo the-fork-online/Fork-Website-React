@@ -30,7 +30,8 @@
     "react-icons": "^3.8.0",
     "react-router-dom": "^5.1.2",
     "reactstrap": "^8.1.1",
-    "scrollreveal": "^4.0.5"
+    "scrollreveal": "^4.0.5",
+    "webpack": "^4.41.2"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
