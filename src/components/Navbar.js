@@ -76,9 +76,7 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="/contact/newsletter">
-                Newsletter
-              </Link>
+              <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script><a id="Setmore_button_iframe" style={{float:"none"}} href="https://my.setmore.com/bookingpage/056b207f-fa24-4b82-91dd-49422cbf9489"><img border="none" src="https://my.setmore.com/webapp/images/bookappt/SetMore-book-button.png" alt="Book an appointment with The Fork using SetMore" /></a>
             </div>
           </div>
         </div>
