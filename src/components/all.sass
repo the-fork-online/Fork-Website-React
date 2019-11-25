@@ -1,0 +1,350 @@
+@import "~bulma/sass/utilities/initial-variables"
+
+// Config vars
+// Kaldi logo brand color: #FD461E
+
+$primary: #193660
+$primary-invert: #fff
+$primary-hover: #326ec2
+$body-color: #333
+$black: #2b2523
+
+.navbar .navbar-menu
+  box-shadow: none !important
+@import "~bulma/sass/utilities/initial-variables"
+
+.navbar .navbar-menu
+  box-shadow: none !important
+
+.content .taglist
+  list-style: none
+  margin-bottom: 0
+  margin-left: 0
+  margin-right: 1.5rem
+  margin-top: 1.5rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: left
+  align-items: center
+  li
+    padding: 0 2rem 1rem 0
+    margin-bottom: 1.5rem
+    margin-top: 0
+
+// Helper Classes
+.full-width-image-container
+  width: 100vw
+  height: 400px
+  position: relative
+  left: 50%
+  right: 50%
+  margin: 2em -50vw
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+
+.full-width-image
+  width: 100vw
+  height: 400px
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+
+// .btn
+//   display: inline-block
+//   padding: 12px 16px 10px
+//   font-size: 18px
+//   font-size: 1rem
+//   line-height: 1.25
+//   background-color: #fff
+//   border-radius: .25rem
+//   text-decoration: none
+//   font-weight: 700
+//   color: #CC3700
+//   text-align: center
+//   -webkit-box-shadow: inset 0 0 0 2px #CC3700
+//   box-shadow: inset 0 0 0 2px #f40
+//   -webkit-transition: all .15s ease
+//   transition: all .15s ease
+
+.margin-top-0
+  margin-top: 0 !important
+
+.navbar-item .icon
+  color: $primary
+// Override for use of svg's from https://simpleicons.org/
+.footer-background
+  background-color: #193660 !important
+
+#footer a
+  color: black
+
+#footer h6
+  color: white
+
+.social-btn
+  padding: 10px 15px
+  font-size: 30px
+  width: 30px
+  text-align: center
+  text-decoration: none
+  margin: 5px 2px
+  border-radius: 50%
+  background: #026666
+
+.social-btn i > svg
+  color: white
+  margin-bottom: 8px
+
+.social-btn:hover
+  background: rgb(35, 74, 92)
+//Menu overrides
+$menu-item-color: $white-ter
+$menu-item-hover-color: $black !important
+$menu-item-hover-background-color: $black
+$menu-item-active-color: $primary-invert
+$menu-item-active-background-color:	$primary-invert
+$menu-list-border-left: 1px solid $primary-invert
+$menu-label-color: $white-ter
+
+.menu-label
+  font-size: 1em !important
+  text-align: left
+.menu-list
+  list-style: none !important
+  text-align: left
+.social
+  padding: 2em
+.social a
+  padding: .5em .5em .3em .5em
+  border-radius: 1em
+  background-color: $white-ter
+  margin: .5em
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  display: inline
+
+// blog roll
+.blog-list-item.is-featured
+  background-color: #d6400033
+.blog-list-item header
+  display: flex
+  margin-bottom: 1em
+.blog-list-item .featured-thumbnail
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
+
+@import "~bulma"
+
+// responsiveness
++tablet-only
+  .blog-list-item .featured-thumbnail
+    flex-basis: 50%
+
++mobile
+  .blog-list-item header
+    display: block
+  .blog-list-item .featured-thumbnail
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
+// -----------------------------------------
+// About
+// -----------------------------------------
+
+.about-description
+  font-size: 16px
+
+#team
+  background: #eee !important
+
+.btn-primary:hover,
+.btn-primary:focus
+  background-color: $primary
+  border-color: $primary
+  box-shadow: none
+  outline: none
+
+.btn-primary
+  color: #fff
+  background-color: $primary
+  border-color: $primary
+  position: absolute
+  bottom: 20px !important
+  left: 0
+  right: 0
+  margin: 0 auto 0 auto
+  width: 40px !important
+
+.front-icon
+  fill: #fff
+
+.back-icon
+  fill: $primary
+  font-size: 40px !important
+
+.back-icon:hover
+  fill: $primary-hover
+
+.back-icon2
+  fill: $primary
+  font-size: 46px !important
+
+.back-icon2:hover
+  fill: $primary-hover
+
+section
+  padding: 60px 0
+
+section .section-title
+  text-align: center
+  color: $primary
+  margin-bottom: 50px
+  text-transform: uppercase
+
+#team .card
+  border: none
+  background: #ffffff
+
+.image-flip:hover .backside,
+.image-flip.hover .backside
+  -webkit-transform: rotateY(0deg)
+  -moz-transform: rotateY(0deg)
+  -o-transform: rotateY(0deg)
+  -ms-transform: rotateY(0deg)
+  transform: rotateY(0deg)
+  border-radius: .25rem
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside
+  -webkit-transform: rotateY(180deg)
+  -moz-transform: rotateY(180deg)
+  -o-transform: rotateY(180deg)
+  transform: rotateY(180deg)
+
+.mainflip
+  -webkit-transition: 1s
+  -webkit-transform-style: preserve-3d
+  -ms-transition: 1s
+  -moz-transition: 1s
+  -moz-transform: perspective(1000px)
+  -moz-transform-style: preserve-3d
+  -ms-transform-style: preserve-3d
+  transition: 1s
+  transform-style: preserve-3d
+  position: relative
+
+.frontside
+  position: relative
+  -webkit-transform: rotateY(0deg)
+  -ms-transform: rotateY(0deg)
+  z-index: 2
+  margin-bottom: 30px
+
+.backside
+  position: absolute
+  top: 0
+  left: 0
+  background: white
+  -webkit-transform: rotateY(-180deg)
+  -moz-transform: rotateY(-180deg)
+  -o-transform: rotateY(-180deg)
+  -ms-transform: rotateY(-180deg)
+  transform: rotateY(-180deg)
+  -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158)
+  -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158)
+  box-shadow: 5px 7px 9px -4px rgb(158, 158, 158)
+
+.frontside,
+.backside
+  -webkit-backface-visibility: hidden
+  -moz-backface-visibility: hidden
+  -ms-backface-visibility: hidden
+  backface-visibility: hidden
+  -webkit-transition: 1s
+  -webkit-transform-style: preserve-3d
+  -moz-transition: 1s
+  -moz-transform-style: preserve-3d
+  -o-transition: 1s
+  -o-transform-style: preserve-3d
+  -ms-transition: 1s
+  -ms-transform-style: preserve-3d
+  transition: 1s
+  transform-style: preserve-3d
+
+.frontside .card,
+.backside .card
+  min-height: 312px
+
+  & a
+    font-size: 18px
+    color: $primary !important
+  
+  & button
+    font-size: 18px
+    color: $primary !important
+
+.card-title
+  margin-top: 20px
+
+.card-subtitle
+  font-size: 18px
+
+.card-title-back
+  margin-top: 0px
+  color: $primary !important
+  font-weight: bold
+  font-size: 20px
+
+.frontside .card .card-title,
+.backside .card .card-title
+  color: $primary !important
+  font-weight: bold
+  font-size: 20px
+
+.frontside .card .card-body img
+  width: 120px
+  height: 120px
+  border-radius: 50%
+
+.team-card
+  transition: 1s
+  transform-style: preserve-3d
+  position: relative
+
+.card-text
+  max-height: 144px !important
+  overflow: hidden
+
+.backside
+  max-height: 312px !important
+  overflow: hidden !important
+
+.team-card:hover
+  margin-bottom: 0px !important
+
+#social-list
+  bottom: 10px !important
+  left: 0
+  right: 0
+  margin: 0 auto 0 auto
+
+.image-center
+  display: inline-flex
+
+@media only screen and (max-width: 991px) and (min-width: 768px)
+  .frontside
+    margin-bottom: 80px !important
+    max-height: 272px !important
+  .backside
+    margin-bottom: 80px !important
+    max-height: none !important
+    overflow: hidden !important
+    width: 66% !important
+  .card-text
+    max-height: none !important
