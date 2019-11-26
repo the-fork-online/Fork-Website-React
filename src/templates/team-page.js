@@ -80,7 +80,6 @@ export const TeamPageQuery = graphql`
             }
           }
         }
-        text
         intro {
           blurbs {
             image {
