@@ -25,7 +25,7 @@ export const TeamPageTemplate = ({
       >
       </div>
       <div className="container mb-4">
-        <PageContent content={content} />
+        <PageContent className="content" content={content} />
       </div>
       <div>
         <Team gridItems={intro.blurbs} />
@@ -44,14 +44,15 @@ TeamPageTemplate.propTypes = {
 }
 
 const TeamPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { markdownRemark: post } = data
 
   return (
     <Layout>
       <TeamPageTemplate
-        image={frontmatter.image}
+        image={post.frontmatter.image}
         contentComponent={HTMLContent}
-        intro={frontmatter.intro}
+        content={post.html}
+        intro={post.frontmatter.intro}
       />
     </Layout>
   )
