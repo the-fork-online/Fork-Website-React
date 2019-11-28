@@ -1,6 +1,7 @@
 ---
 templateKey: team-page
 image: /img/federico-respini-syffw0lnr7s-unsplash.jpg
+heading: About The New Fork
 intro:
   blurbs:
     - bio: >-
@@ -175,8 +176,6 @@ intro:
       name: Laurens Tobias
       position: Computer Science Intern
 ---
-## About Us
-
 We help companies see different ways of cooperating, of sharing information on optimizing business processes. We make the supply chain fairer, more resilient and efficient. We do this by reducing costs, throughput time, by increasing traceability and transparency within the supply chain. We do this for the agri-food sector as it can be most helped by this technology. We are the Fork and we implement blockchain solutions.
 
 **The Fork**, founded by **Marieke de Ruyter** de Wildt, is the company that is on the frontier of **blockchain** technology.

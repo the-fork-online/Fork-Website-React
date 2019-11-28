@@ -7,6 +7,7 @@ import Content, { HTMLContent } from '../components/Content'
 
 export const TeamPageTemplate = ({
   image,
+  heading,
   intro,
   content,
   contentComponent
@@ -23,6 +24,7 @@ export const TeamPageTemplate = ({
           })`,
         }}
       >
+        <h1 className="page-header">{heading}</h1>
       </div>
       <div className="container mb-4">
         <PageContent className="content" content={content} />
@@ -36,6 +38,7 @@ export const TeamPageTemplate = ({
 
 TeamPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  heading: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   intro: PropTypes.shape({
@@ -50,6 +53,7 @@ const TeamPage = ({ data }) => {
     <Layout>
       <TeamPageTemplate
         image={post.frontmatter.image}
+        heading={post.frontmatter.heading}
         contentComponent={HTMLContent}
         content={post.html}
         intro={post.frontmatter.intro}
@@ -80,6 +84,7 @@ export const TeamPageQuery = graphql`
             }
           }
         }
+        heading
         intro {
           blurbs {
             image {
