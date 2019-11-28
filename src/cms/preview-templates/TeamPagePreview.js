@@ -8,6 +8,7 @@ const TeamPagePreview = ({ entry, widgetFor }) => {
 
   return (
     <TeamPageTemplate
+      heading={entry.getIn(['data', 'heading'])}
       image={entry.getIn(['data', 'image'])}
       content={widgetFor('body')}
       intro={{ blurbs }}

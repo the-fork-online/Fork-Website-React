@@ -51,6 +51,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "team-page"}
           - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: Team, name: intro, widget: object, fields: [{label: Teams, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Name, name: name, widget: text}, {label: Position, name: position, widget: text}, {label: Bio, name: bio, widget: text}, {label: Linkedin (Please put https:// infront of the link!!!), name: linkedin, widget: text}, {label: Mail (Please put mailto Infront of the mail address!!!), name: mail, widget: text}]}]}
       - file: "src/pages/products/index.md"
