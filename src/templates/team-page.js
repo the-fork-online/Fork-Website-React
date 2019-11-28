@@ -24,7 +24,7 @@ export const TeamPageTemplate = ({
           })`,
         }}
       >
-        <h1 className="page-header">{heading}</h1>
+        <h1 data-sal="slide-up" data-sal-delay="300" data-sal-duration="800" data-sal-easing="ease" className="page-header">{heading}</h1>
       </div>
       <div className="container mb-4">
         <PageContent className="content" content={content} />
